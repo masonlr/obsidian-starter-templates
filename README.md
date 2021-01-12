@@ -144,6 +144,12 @@ Keep a record of important books here. Each book page could link to a set of rel
 
 - [Saini – Inferior.md](<./researcher/books/Saini%20(2017)%20%E2%80%93%20Inferior.md>)
 
+  **TIP:** Link from PDF pages to book pages:
+
+  ```markdown
+  - [[Saini (2017) - Inferior.pdf#page=40]] described it.
+  ```
+
 #### [tools/](./researcher/tools/)
 
 Think about the tools you're currently using, search for new tools, write notes about what you've learnt.
