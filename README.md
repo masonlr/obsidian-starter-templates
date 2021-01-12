@@ -206,6 +206,22 @@ Once an idea has been explored or a task has been finished, delete the tag or ad
 
 - `#done`: Done
 
+Kanban with embeded queries:
+
+  ```markdown
+  |              |                 |           |
+  | ------------ | --------------- | --------- |
+  | ![[Backlog]] | ![[InProgress]] | ![[done]] |
+  ```
+
+  Example in `Backlog.md`:
+
+  ````markdown
+  ```query
+  tag:backlog
+  ```
+  ````
+
 #### Task lists
 
 [Markdown task lists](https://help.github.com/en/github/managing-your-work-on-github/about-task-lists) work well in WYSIWYG editors such as [Typora](https://typora.io/). WYSIWYG editing is on the [Obsidian roadmap](https://trello.com/b/Psqfqp7I/obsidian-roadmap), so may well become a better option than a tag based system.
