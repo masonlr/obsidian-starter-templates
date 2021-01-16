@@ -34,7 +34,7 @@ The template is intended to be modular. A minimal use could include [scratch/](h
 The scratch folder is an area for messy, low-friction daily free-form planning and logging of ideas, i.e. [scratch/](./researcher/scratch/) will store content generated using the Obsidian "daily notes" feature. Daily notes can be created using the "Open today's note" action: this will create a new markdown file that follows the date-stamped name convention `YYYY-MM-DD.md`.
 
 **Tip:** Set a keyboard shortcut to quickly go to the day's note. For example, set `cmd+T` to "Open today's note" in the Hotkeys settings.  
-**Tip:** Create a rigid for daily notes by specifying a template markdown file, though a blank template may encourage free-form thinking.
+**Tip:** Create a rigid layout for daily notes by specifying a template markdown file, though a blank template may encourage free-form thinking.
 
 After a few days, daily notes will build up as follows:
 
@@ -84,7 +84,7 @@ Link ideas, concepts and people to projects.
 
   Project backlinks will then show dates that it was worked on.
 
-  **TIP:** Add links to people and details of there involvement. Example in [Project A.md](./researcher/projects/Project%20A.md):
+  **TIP:** Add links to people and details of their involvement. Example in [Project A.md](./researcher/projects/Project%20A.md):
 
   ```markdown
   ## People
