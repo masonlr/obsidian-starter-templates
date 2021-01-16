@@ -9,7 +9,7 @@ If you've tested out [Obsidian](https://obsidian.md/) and worked through the "Ob
 1. How others use backlinks and various markdown tricks,
 2. Why these techniques work.
 
-The initial example covers how an academic [researcher](https://github.com/masonlr/obsidian-starter#researcher) might choose to approach Obsidian.
+The initial example covers how an academic [researcher](https://github.com/masonlr/obsidian-starter-templates#researcher) might choose to approach Obsidian.
 
 ## Getting started
 
@@ -27,7 +27,7 @@ The [researcher/](./researcher) template suits a case where you are juggling mul
 
 <img src="assets/researcher.png" style="zoom:50%;" />
 
-The template is intended to be modular. A minimal use could include [scratch/](https://github.com/masonlr/obsidian-starter#scratch) and [concepts/](https://github.com/masonlr/obsidian-starter#concepts), then later expand to [projects/](https://github.com/masonlr/obsidian-starter#projects) and [people/](https://github.com/masonlr/obsidian-starter#people). The intended structure is given by the following tree:
+The template is intended to be modular. A minimal use could include [scratch/](https://github.com/masonlr/obsidian-starter-templates#scratch) and [concepts/](https://github.com/masonlr/obsidian-starter-templates#concepts), then later expand to [projects/](https://github.com/masonlr/obsidian-starter-templates#projects) and [people/](https://github.com/masonlr/obsidian-starter-templates#people). The intended structure is given by the following tree:
 
 #### [scratch/](./researcher/scratch/)
 
@@ -52,7 +52,7 @@ After a few days, daily notes will build up as follows:
 
   When later reviewing [A concept.md](./researcher/concepts/A%20concept.md), backlinks will show that you were thinking about it on a particular date ([2020-05-24.md](./researcher/scratch/2020-05-24.md)).
 
-  **TIP:** Use tags such as `#backlog` and `#priority` for simple Kanban-style task tracking, see [Distributed idea tracking](https://github.com/masonlr/obsidian-starter#distributed-idea-tracking).
+  **TIP:** Use tags such as `#backlog` and `#priority` for simple Kanban-style task tracking, see [Distributed idea tracking](https://github.com/masonlr/obsidian-starter-templates#distributed-idea-tracking).
 
 #### [concepts/](./researcher/concepts/)
 
