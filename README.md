@@ -9,7 +9,7 @@ If you've tested out [Obsidian](https://obsidian.md/) and worked through the "Ob
 1. How others use backlinks and various markdown tricks,
 2. Why these techniques work.
 
-The initial example covers how an academic [researcher](https://github.com/masonlr/obsidian-starter-templates#researcher) might choose to approach Obsidian.
+The initial example covers how an academic researcher might choose to approach Obsidian.
 
 ## Getting started
 
@@ -18,6 +18,9 @@ The initial example covers how an academic [researcher](https://github.com/mason
 1. Clone the repository and open a vault folder in Obsidian using the "Open another vault" sidebar button.
 
 ## Templates
+
+* [Researcher](#Researcher): general purpose template for research projects (added May 2020)
+* [Researcher (with plugins)](#researcher-with-plugins): extended template using newer Obsidian community plugins (added March 2021)
 
 ### Researcher
 
@@ -33,8 +36,8 @@ The template is intended to be modular. A minimal use could include [scratch/](h
 
 The scratch folder is an area for messy, low-friction daily free-form planning and logging of ideas, i.e. [scratch/](./researcher/scratch/) will store content generated using the Obsidian "daily notes" feature. Daily notes can be created using the "Open today's note" action: this will create a new markdown file that follows the date-stamped name convention `YYYY-MM-DD.md`.
 
-**Tip:** Set a keyboard shortcut to quickly go to the day's note. For example, set `cmd+T` to "Open today's note" in the Hotkeys settings.  
-**Tip:** Create a rigid layout for daily notes by specifying a template markdown file, though a blank template may encourage free-form thinking.
+**TIP:** Set a keyboard shortcut to quickly go to the day's note. For example, set `cmd+T` to "Open today's note" in the Hotkeys settings.  
+**TIP:** Create a rigid layout for daily notes by specifying a template markdown file, though a blank template may encourage free-form thinking.
 
 After a few days, daily notes will build up as follows:
 
@@ -60,7 +63,7 @@ Folder for "evergreen" concept notes (see Andy Matuschak's [evergreen notes](htt
 
 - [A concept.md](./researcher/concepts/A%20concept.md)
 
-  A example concept note.
+  An example concept note.
 
   **TIP:** In a link, it's clearer to read `[[A concept]]` than `[[a-concept]]`, so the filename uses white spaces here and sentence case.
 
@@ -211,7 +214,7 @@ Kanban with embeded queries:
   ```markdown
   |              |                 |           |
   | ------------ | --------------- | --------- |
-  | ![[Backlog]] | ![[InProgress]] | ![[done]] |
+  | ![[Backlog]] | ![[Priority]] | ![[Done]] |
   ```
 
   Example in `Backlog.md`:
@@ -219,7 +222,7 @@ Kanban with embeded queries:
   ````markdown
   ```query
   tag:backlog
-  ```
+```
   ````
 
 #### Task lists
@@ -230,7 +233,7 @@ Kanban with embeded queries:
 
 For one-off references, pasted links work fine. Example in [A concept.md](./researcher/concepts/A%20concept.md):
 
-```markdown
+​```markdown
 This concept only appeared once, so just paste link.
 https://en.wikipedia.org/wiki/Mental_state
 ```
@@ -248,6 +251,77 @@ I need to check.[^repeated]
 
 [^repeated]: Flow (psychology): https://en.wikipedia.org/wiki/Flow_(psychology)
 ```
+
+### Researcher (with plugins)
+
+Since [Researcher](#Researcher) was posted (May 2020) there have been updates to Obsidian, including many community plugins. [Researcher_(with plugins)](./researcher_with_plugins) (March 2021) captures several newer ideas and can be viewed as a more advanced version of the original [Researcher](#Researcher) template.
+
+#### Maps of Content
+
+A blend of Maps of Content, roadmaps and changelogs is effective for organising multiple projects.
+
+For example:
+
+##### [concepts/](./researcher_with_plugins/concepts/)
+
+Keep one flat structure for all evergreen concept notes.
+
+* [Concept.md](./researcher_with_plugins/concepts/Concept.md)
+
+  An example concept note.
+
+* [Project A](./researcher_with_plugins/concepts/Project%20A.md)
+
+  An example map of content (see [In what ways can we form useful relationships between notes](https://forum.obsidian.md/t/in-what-ways-can-we-form-useful-relationships-between-notes-long-read/702)) for summarising a project.
+
+  **TIP:** If you have multiple projects create additional maps of content, for example Project B and Project C (use more meaningful names though). Keep a flat structure rather than creating dedicated folders for each project.
+
+* [Project A CHANGELOG](./researcher_with_plugins/concepts/Project%20A%20CHANGELOG.md)
+
+  Keep a rough changelog of important completed tasks in your project – many open-source projects use a `CHANGELOG.md` file (see for example [Keep a Changelog](https://keepachangelog.com/)).
+
+* [Project A ROADMAP](./researcher_with_plugins/concepts/Project%20A%20ROADMAP.md)
+
+  Keep a rough sketch of future ideas and plans using a roadmap – many open-source projects use a `ROADMAP.md` (for ideas, check out Mozilla's [Introduction to Roadmapping](https://mozillascience.github.io/working-open-workshop/roadmapping/)).
+
+#### Referencing
+
+##### [references.bib](./researcher_with_plugins/references.bib)
+
+The [Citations](https://github.com/hans/obsidian-citation-plugin) community plugin is great for referencing. If you maintain a list of references in `.bib` format (for example using [Zotero](https://www.zotero.org/) or [BibDesk](https://bibdesk.sourceforge.io/)), you can search references from within Obsidian and, if needed, create a dedicated page for each reference.
+
+**TIP:** You can create a dedicated page for each reference via "Citations: Open literature note" in the Obsidian command palette – create a dedicated Hotkey for this action if you use it often.
+
+![Citations: Open literature note](./assets/citations_open_literature_note.png)
+
+
+
+You can write short notes (for example, short chapter summaries) on each reference page itself (see [books/@butcher2016go](./researcher_with_plugins/books/@butcher2016go)). It can be useful to write longer notes on specific concepts elsewhere, and refer back to the source using Markdown citations: `[[@butcher2016go]`.
+
+**TIP:** You can create a citations using "Citations: Insert Markdown citation" in the Obsidian command palette – create a dedicated Hotkey for this action if you use it often.
+
+#### Backups
+
+Use [Obsidian Git](https://github.com/denolehov/obsidian-git) to configure automatic backups to a remote git repository (e.g. GitHub or GitLab).
+
+#### Templating
+
+##### [templates/](./researcher_v2/templates)
+
+* [Daily.md](./researcher_v2/templates/Daily.md)
+
+  The [Templater](https://github.com/SilentVoid13/Templater) community plugin allows you to create custom daily notes. In this simple example, we have links to yesterday and tomorrow (these links allow you to flick quickly between days when reviewing notes):
+
+  ```markdown
+  📆 [[{{tp_yesterday}}]] – [[{{tp_tomorrow}}]]
+  ```
+
+#### Syntax highlighting
+
+[Editor Syntax Highlight](https://github.com/deathau/cm-editor-syntax-highlight-obsidian) enables syntax highlighting while in editor mode:
+
+![Editor syntax highlighting](./assets/editor_syntax_highlight.png)
+
 
 ## References
 
