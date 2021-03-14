@@ -19,10 +19,56 @@ The initial example covers how an academic researcher might choose to approach O
 
 ## Contents
 
+* [Technology Radar](#Technology%20Radar): a template for tracking tools
 * [Researcher](#Researcher): general purpose template for research projects
 * [Researcher (with plugins)](#researcher-with-plugins): extended template using newer Obsidian community plugins
 
 ## Templates
+
+### Technology Radar
+
+Technology Radars are a good way to review tools: for example, tools, techniques, languages, frameworks and platforms (Hewitt, 2019). See the [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar) for a comprehensive example. 
+
+You can use Obsidian to track the tools that you're currently assessing and learning, noting down why they work for you. In this template, we use a YAML header of the form:
+
+```yaml
+---
+name: Tool
+site: https://tool.io/
+status: one of [hold|assess|trial|adopt]
+topic: 
+ - machine learning
+ - frontend
+ - systems
+history:
+  - 2021-03-14: adopt
+  - 2021-03-07: assess
+---
+
+Additional Markdown content.
+```
+
+The YAML header is useful if you want to parse your radar using additional scripting tools. The fields `status` and `history` can be used, for example, to track the progress of each tool through the radar.
+
+#### [Template.md](./technology_radar/Template.md)
+
+You can use a template file to make sure all of your entries are consistent. Adjust the template to your needs, for example by changing the list of topics to one more relevant to your project.
+
+#### [content/](./technology_radar/content)
+
+Use a flat folder structure, where all entries live within a single folder.
+
+#### [Overview.md](./technology_radar/Overview.md)
+
+The overview file is a Map of Content used to categorise the tools.
+
+This example has four additional Maps of Content ([Experiment Tracking](./technology_radar/Experiment%20Tracking.md), [Feature Store](./technology_radar/Feature%20Store.md), [Graph Database](./technology_radar/Graph%20Database.md) and [Model Serving](./technology_radar/Model%20Serving.md)). We can tag each Map of Content using `#moc` within the file so that they are easy to see in the graph visualisation:
+
+![Technology radar graph view](./assets/technology_radar.png)
+
+In this example, `[[Machine Learning]]` is emerging as a highly linked node: suggesting that we could convert `[[Machine Learning]]` into its own Map of Content.
+
+**TIP:** Visualise the status of each tool using group queries in the graph view, for example `line:(status: trial)`.
 
 ### Researcher
 
@@ -328,6 +374,7 @@ Use [Obsidian Git](https://github.com/denolehov/obsidian-git) to configure autom
 
 ## References
 
+- Hewitt, E, 2019. Technology Strategy Patterns. O'Reilly Media.
 - Obsidian: https://obsidian.md/
 - Matuschak, A. Evergreen notes: https://notes.andymatuschak.org/Evergreen_notes
 - Matuschak, A. Note-link Janitor: https://github.com/andymatuschak/note-link-janitor
