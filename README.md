@@ -19,8 +19,8 @@ The initial example covers how an academic researcher might choose to approach O
 
 ## Contents
 
-* [Researcher](#Researcher): general purpose template for research projects (added May 2020)
-* [Researcher (with plugins)](#researcher-with-plugins): extended template using newer Obsidian community plugins (added March 2021)
+* [Researcher](#Researcher): general purpose template for research projects
+* [Researcher (with plugins)](#researcher-with-plugins): extended template using newer Obsidian community plugins
 
 ## Templates
 
@@ -222,11 +222,12 @@ Once an idea has been explored or a task has been finished, delete the tag or ad
 Example in `Backlog.md`:
 
 ```markdown
-```query
+​```query
 tag:backlog
 ​```
 ```
 
+![Example Kanban board](./assets/kanban.png)
 
 #### Task lists
 
@@ -257,7 +258,7 @@ A reference[^repeated] had an even different idea to [[Csikszentmihalyi (2008) �
 
 ### Researcher (with plugins)
 
-Since [Researcher](#Researcher) was posted (May 2020) there have been updates to Obsidian, including many community plugins. [Researcher (with plugins)](./researcher_with_plugins) (March 2021) captures several newer ideas and can be viewed as a more advanced version of the original [Researcher](#Researcher) template.
+Since the original [Researcher](#Researcher) template was posted there have been updates to Obsidian, including many community plugins. [Researcher (with plugins)](./researcher_with_plugins) captures several newer ideas and can be viewed as an advanced version of the original [Researcher](#Researcher) template.
 
 #### Maps of Content
 
