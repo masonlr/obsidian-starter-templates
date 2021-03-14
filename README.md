@@ -17,14 +17,16 @@ The initial example covers how an academic researcher might choose to approach O
 
 1. Clone the repository and open a vault folder in Obsidian using the "Open another vault" sidebar button.
 
-## Templates
+## Contents
 
 * [Researcher](#Researcher): general purpose template for research projects (added May 2020)
 * [Researcher (with plugins)](#researcher-with-plugins): extended template using newer Obsidian community plugins (added March 2021)
 
+## Templates
+
 ### Researcher
 
-The [researcher/](./researcher) template suits a case where you are juggling multiple research projects: for example, reading several books and research papers simultaneously and maintaining multiple collaborations with other researchers. It's nice to have a starter template to experiment with ideas, even though backlinks and associative thinking encourage you to avoid hierarchies and rigid hierarchical structures: see for example Andy Matuschak's [evergreen notes](https://notes.andymatuschak.org/Evergreen_notes), [taxonomy of note types](https://notes.andymatuschak.org/Taxonomy_of_note_types) and [note-link-janitor](https://github.com/andymatuschak/note-link-janitor) project.
+The [Researcher](./researcher) template suits a case where you are juggling multiple research projects: for example, reading several books and research papers simultaneously and maintaining multiple collaborations with other researchers. It's nice to have a starter template to experiment with ideas, even though backlinks and associative thinking encourage you to avoid hierarchies and rigid hierarchical structures: see for example Andy Matuschak's [evergreen notes](https://notes.andymatuschak.org/Evergreen_notes), [taxonomy of note types](https://notes.andymatuschak.org/Taxonomy_of_note_types) and [note-link-janitor](https://github.com/andymatuschak/note-link-janitor) project.
 
 #### Example network
 
@@ -187,7 +189,7 @@ Question your approaches here and keep a record of insights and meta concepts.
 
   **TIP:** When renaming an image, all links to it will be automatically updated.
 
-### Distributed idea tracking
+#### Distributed idea tracking
 
 Rather than maintaining a list of tasks, distribute the tags across all files so that tags are placed alongside content. Tags can be used to replace simple Kanban-style task tracking. Use whatever tag system works for you – an example idea tags could include:
 
@@ -209,7 +211,7 @@ Once an idea has been explored or a task has been finished, delete the tag or ad
 
 - `#done`: Done
 
-Kanban with embeded queries:
+#### Kanban with embeded queries:
 
   ```markdown
   |              |                 |           |
@@ -217,23 +219,24 @@ Kanban with embeded queries:
   | ![[Backlog]] | ![[Priority]] | ![[Done]] |
   ```
 
-  Example in `Backlog.md`:
+Example in `Backlog.md`:
 
-  ````markdown
-  ```query
-  tag:backlog
+```markdown
+```query
+tag:backlog
+​```
 ```
-  ````
+
 
 #### Task lists
 
 [Markdown task lists](https://help.github.com/en/github/managing-your-work-on-github/about-task-lists) work well in WYSIWYG editors such as [Typora](https://typora.io/). WYSIWYG editing is on the [Obsidian roadmap](https://trello.com/b/Psqfqp7I/obsidian-roadmap), so may well become a better option than a tag based system.
 
-### Referencing
+#### Referencing
 
 For one-off references, pasted links work fine. Example in [A concept.md](./researcher/concepts/A%20concept.md):
 
-​```markdown
+```markdown
 This concept only appeared once, so just paste link.
 https://en.wikipedia.org/wiki/Mental_state
 ```
@@ -244,17 +247,17 @@ If a link occurs multiple times, it might be appropriate to use markdown footnot
 This link appears many times,[^repeated] so maybe use a footnote.
 A reference[^repeated] had an even different idea to [[Csikszentmihalyi (2008) – Flow]].
 
-[[Collaborator A]] has a good idea about this, but [[Supervisor]] thinks that this is wrong.
-I need to check.[^repeated]
+[[Collaborator A]] has a good idea about this, but [[Supervisor]] thinks that this is wrong. I need to check.[^repeated]
 
 ## References
 
 [^repeated]: Flow (psychology): https://en.wikipedia.org/wiki/Flow_(psychology)
 ```
 
+
 ### Researcher (with plugins)
 
-Since [Researcher](#Researcher) was posted (May 2020) there have been updates to Obsidian, including many community plugins. [Researcher_(with plugins)](./researcher_with_plugins) (March 2021) captures several newer ideas and can be viewed as a more advanced version of the original [Researcher](#Researcher) template.
+Since [Researcher](#Researcher) was posted (May 2020) there have been updates to Obsidian, including many community plugins. [Researcher (with plugins)](./researcher_with_plugins) (March 2021) captures several newer ideas and can be viewed as a more advanced version of the original [Researcher](#Researcher) template.
 
 #### Maps of Content
 
@@ -296,7 +299,7 @@ The [Citations](https://github.com/hans/obsidian-citation-plugin) community plug
 
 
 
-You can write short notes (for example, short chapter summaries) on each reference page itself (see [books/@butcher2016go](./researcher_with_plugins/books/@butcher2016go)). It can be useful to write longer notes on specific concepts elsewhere, and refer back to the source using Markdown citations: `[[@butcher2016go]`.
+You can write short notes (for example, short chapter summaries) on each reference page itself (see [@butcher2016go.md](./researcher_with_plugins/books/@butcher2016go.md)). It can be useful to write longer notes on specific concepts elsewhere, and refer back to the source using Markdown citations: `[[@butcher2016go]`.
 
 **TIP:** You can create a citations using "Citations: Insert Markdown citation" in the Obsidian command palette – create a dedicated Hotkey for this action if you use it often.
 
@@ -315,7 +318,6 @@ Use [Obsidian Git](https://github.com/denolehov/obsidian-git) to configure autom
   ```markdown
   📆 [[{{tp_yesterday}}]] – [[{{tp_tomorrow}}]]
   ```
-
 #### Syntax highlighting
 
 [Editor Syntax Highlight](https://github.com/deathau/cm-editor-syntax-highlight-obsidian) enables syntax highlighting while in editor mode:
